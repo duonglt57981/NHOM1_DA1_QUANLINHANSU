@@ -34,10 +34,10 @@
             panel2 = new Panel();
             button6 = new Button();
             button5 = new Button();
-            button4 = new Button();
-            button3 = new Button();
+            button_KTKL = new Button();
+            button_BaoHiem = new Button();
             button1 = new Button();
-            button2 = new Button();
+            button_ChamCong = new Button();
             button_QLHopDong = new Button();
             button_QLNhanVien = new Button();
             panelMain = new Panel();
@@ -73,10 +73,10 @@
             panel2.BackColor = Color.SteelBlue;
             panel2.Controls.Add(button6);
             panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
-            panel2.Controls.Add(button3);
+            panel2.Controls.Add(button_KTKL);
+            panel2.Controls.Add(button_BaoHiem);
             panel2.Controls.Add(button1);
-            panel2.Controls.Add(button2);
+            panel2.Controls.Add(button_ChamCong);
             panel2.Controls.Add(button_QLHopDong);
             panel2.Controls.Add(button_QLNhanVien);
             panel2.Location = new Point(1, 44);
@@ -103,30 +103,30 @@
             button5.Name = "button5";
             button5.Size = new Size(280, 60);
             button5.TabIndex = 7;
-            button5.Text = "button5";
+            button5.Text = "ĐĂNG XUẤT";
             button5.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // button_KTKL
             // 
-            button4.BackColor = Color.DeepSkyBlue;
-            button4.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button4.Location = new Point(3, 201);
-            button4.Name = "button4";
-            button4.Size = new Size(280, 60);
-            button4.TabIndex = 6;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = false;
+            button_KTKL.BackColor = Color.DeepSkyBlue;
+            button_KTKL.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            button_KTKL.Location = new Point(3, 201);
+            button_KTKL.Name = "button_KTKL";
+            button_KTKL.Size = new Size(280, 60);
+            button_KTKL.TabIndex = 6;
+            button_KTKL.Text = "KHEN THƯỞNG KỈ LUẬT";
+            button_KTKL.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // button_BaoHiem
             // 
-            button3.BackColor = Color.DeepSkyBlue;
-            button3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button3.Location = new Point(4, 267);
-            button3.Name = "button3";
-            button3.Size = new Size(280, 60);
-            button3.TabIndex = 5;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = false;
+            button_BaoHiem.BackColor = Color.DeepSkyBlue;
+            button_BaoHiem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            button_BaoHiem.Location = new Point(4, 267);
+            button_BaoHiem.Name = "button_BaoHiem";
+            button_BaoHiem.Size = new Size(280, 60);
+            button_BaoHiem.TabIndex = 5;
+            button_BaoHiem.Text = "BẢO HIỂM";
+            button_BaoHiem.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -136,19 +136,19 @@
             button1.Name = "button1";
             button1.Size = new Size(280, 60);
             button1.TabIndex = 4;
-            button1.Text = "button1";
+            button1.Text = "TÀI KHOẢN";
             button1.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // button_ChamCong
             // 
-            button2.BackColor = Color.DeepSkyBlue;
-            button2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button2.Location = new Point(2, 135);
-            button2.Name = "button2";
-            button2.Size = new Size(280, 60);
-            button2.TabIndex = 3;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = false;
+            button_ChamCong.BackColor = Color.DeepSkyBlue;
+            button_ChamCong.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            button_ChamCong.Location = new Point(2, 135);
+            button_ChamCong.Name = "button_ChamCong";
+            button_ChamCong.Size = new Size(280, 60);
+            button_ChamCong.TabIndex = 3;
+            button_ChamCong.Text = "QUẢN LÍ CHẤM CÔNG";
+            button_ChamCong.UseVisualStyleBackColor = false;
             // 
             // button_QLHopDong
             // 
@@ -187,7 +187,6 @@
             panelMain.Name = "panelMain";
             panelMain.Size = new Size(945, 570);
             panelMain.TabIndex = 2;
-            panelMain.Paint += panelMain_Paint;
             // 
             // TrangChu
             // 
@@ -200,6 +199,7 @@
             Controls.Add(panel1);
             Name = "TrangChu";
             Text = "Hệ Thống Quản Lí Nhân Sự";
+            Load += TrangChu_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             panel2.ResumeLayout(false);
@@ -210,15 +210,15 @@
 
         private Panel panel1;
         private Panel panel2;
-        private Button button2;
+        private Button button_ChamCong;
         private Button button_QLHopDong;
         private Button button_QLNhanVien;
         private Label label1;
         private Panel panelMain;
         private Button button6;
         private Button button5;
-        private Button button4;
-        private Button button3;
+        private Button button_KTKL;
+        private Button button_BaoHiem;
         private Button button1;
     }
 }

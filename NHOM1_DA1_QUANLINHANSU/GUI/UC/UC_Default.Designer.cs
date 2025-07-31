@@ -37,9 +37,10 @@
             // 
             // label3
             // 
+            label3.Anchor = AnchorStyles.Top;
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(82, 79);
+            label3.Location = new Point(77, 108);
             label3.Name = "label3";
             label3.Size = new Size(781, 26);
             label3.TabIndex = 5;
@@ -47,9 +48,10 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(98, 35);
+            label2.Location = new Point(91, 45);
             label2.Name = "label2";
             label2.Size = new Size(740, 38);
             label2.TabIndex = 4;
