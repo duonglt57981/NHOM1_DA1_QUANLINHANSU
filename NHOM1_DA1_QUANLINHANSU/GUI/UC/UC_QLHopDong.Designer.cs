@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_QLHopDong));
             panel1 = new Panel();
             groupBox1 = new GroupBox();
             textBox3 = new TextBox();
@@ -63,15 +64,14 @@
             panel2 = new Panel();
             dataGridView1 = new DataGridView();
             panel3 = new Panel();
-            groupBox2 = new GroupBox();
-            textBox12 = new TextBox();
-            button4 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
             label10 = new Label();
+            groupBox2 = new GroupBox();
+            textBox_QLNV_TimKiem = new TextBox();
+            button_QLNV_Sua = new Button();
+            button_QLNV_TimKiem = new Button();
+            button_QLNV_XuatFlie = new Button();
+            button_QLNV_Them = new Button();
+            button_QLNV_LamMoi = new Button();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
             panel2.SuspendLayout();
@@ -86,7 +86,7 @@
             panel1.Controls.Add(groupBox1);
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(669, 419);
+            panel1.Size = new Size(669, 452);
             panel1.TabIndex = 1;
             // 
             // groupBox1
@@ -125,7 +125,7 @@
             groupBox1.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             groupBox1.Location = new Point(3, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(660, 413);
+            groupBox1.Size = new Size(660, 446);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin hợp đồng";
@@ -155,7 +155,7 @@
             textBox11.Multiline = true;
             textBox11.Name = "textBox11";
             textBox11.ReadOnly = true;
-            textBox11.Size = new Size(380, 212);
+            textBox11.Size = new Size(380, 245);
             textBox11.TabIndex = 35;
             // 
             // label16
@@ -175,7 +175,7 @@
             textBox10.Location = new Point(9, 367);
             textBox10.Multiline = true;
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(233, 34);
+            textBox10.Size = new Size(233, 67);
             textBox10.TabIndex = 33;
             // 
             // label15
@@ -417,7 +417,7 @@
             panel2.Controls.Add(dataGridView1);
             panel2.Location = new Point(675, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(497, 419);
+            panel2.Size = new Size(497, 452);
             panel2.TabIndex = 2;
             // 
             // dataGridView1
@@ -427,103 +427,17 @@
             dataGridView1.Location = new Point(0, 12);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(491, 404);
+            dataGridView1.Size = new Size(491, 437);
             dataGridView1.TabIndex = 0;
             // 
             // panel3
             // 
             panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.Controls.Add(groupBox2);
-            panel3.Location = new Point(0, 425);
+            panel3.Location = new Point(0, 458);
             panel3.Name = "panel3";
             panel3.Size = new Size(1173, 112);
             panel3.TabIndex = 3;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            groupBox2.Controls.Add(textBox12);
-            groupBox2.Controls.Add(button4);
-            groupBox2.Controls.Add(button6);
-            groupBox2.Controls.Add(button5);
-            groupBox2.Controls.Add(button3);
-            groupBox2.Controls.Add(button2);
-            groupBox2.Controls.Add(button1);
-            groupBox2.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            groupBox2.Location = new Point(3, 3);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1166, 106);
-            groupBox2.TabIndex = 0;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Chức năng";
-            // 
-            // textBox12
-            // 
-            textBox12.Anchor = AnchorStyles.None;
-            textBox12.Location = new Point(657, 22);
-            textBox12.Name = "textBox12";
-            textBox12.Size = new Size(343, 28);
-            textBox12.TabIndex = 41;
-            // 
-            // button4
-            // 
-            button4.Anchor = AnchorStyles.None;
-            button4.Location = new Point(657, 56);
-            button4.Name = "button4";
-            button4.Size = new Size(343, 44);
-            button4.TabIndex = 40;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            button6.Anchor = AnchorStyles.None;
-            button6.Location = new Point(488, 24);
-            button6.Name = "button6";
-            button6.Size = new Size(94, 76);
-            button6.TabIndex = 39;
-            button6.Text = "Làm mới";
-            button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Anchor = AnchorStyles.None;
-            button5.Location = new Point(1066, 24);
-            button5.Name = "button5";
-            button5.Size = new Size(94, 76);
-            button5.TabIndex = 4;
-            button5.Text = "Xuất file";
-            button5.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.Anchor = AnchorStyles.None;
-            button3.Location = new Point(323, 24);
-            button3.Name = "button3";
-            button3.Size = new Size(94, 76);
-            button3.TabIndex = 2;
-            button3.Text = "Xóa";
-            button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Anchor = AnchorStyles.None;
-            button2.Location = new Point(164, 24);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 76);
-            button2.TabIndex = 1;
-            button2.Text = "Sửa";
-            button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.None;
-            button1.Location = new Point(9, 24);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 76);
-            button1.TabIndex = 0;
-            button1.Text = "Thêm";
-            button1.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -535,6 +449,101 @@
             label10.TabIndex = 9;
             label10.Text = "Ngày Kí Hợp Đồng:";
             // 
+            // groupBox2
+            // 
+            groupBox2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox2.Controls.Add(textBox_QLNV_TimKiem);
+            groupBox2.Controls.Add(button_QLNV_Sua);
+            groupBox2.Controls.Add(button_QLNV_TimKiem);
+            groupBox2.Controls.Add(button_QLNV_XuatFlie);
+            groupBox2.Controls.Add(button_QLNV_Them);
+            groupBox2.Controls.Add(button_QLNV_LamMoi);
+            groupBox2.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
+            groupBox2.Location = new Point(3, 3);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(1166, 106);
+            groupBox2.TabIndex = 0;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Chức năng";
+            // 
+            // textBox_QLNV_TimKiem
+            // 
+            textBox_QLNV_TimKiem.Anchor = AnchorStyles.None;
+            textBox_QLNV_TimKiem.Location = new Point(928, 24);
+            textBox_QLNV_TimKiem.Name = "textBox_QLNV_TimKiem";
+            textBox_QLNV_TimKiem.Size = new Size(232, 28);
+            textBox_QLNV_TimKiem.TabIndex = 66;
+            // 
+            // button_QLNV_Sua
+            // 
+            button_QLNV_Sua.Anchor = AnchorStyles.None;
+            button_QLNV_Sua.BackColor = Color.DeepSkyBlue;
+            button_QLNV_Sua.Image = (Image)resources.GetObject("button_QLNV_Sua.Image");
+            button_QLNV_Sua.Location = new Point(236, 27);
+            button_QLNV_Sua.Name = "button_QLNV_Sua";
+            button_QLNV_Sua.Size = new Size(95, 76);
+            button_QLNV_Sua.TabIndex = 62;
+            button_QLNV_Sua.Text = "Sửa";
+            button_QLNV_Sua.TextAlign = ContentAlignment.MiddleRight;
+            button_QLNV_Sua.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_QLNV_Sua.UseVisualStyleBackColor = false;
+            // 
+            // button_QLNV_TimKiem
+            // 
+            button_QLNV_TimKiem.Anchor = AnchorStyles.None;
+            button_QLNV_TimKiem.BackColor = Color.DeepSkyBlue;
+            button_QLNV_TimKiem.Image = (Image)resources.GetObject("button_QLNV_TimKiem.Image");
+            button_QLNV_TimKiem.Location = new Point(928, 57);
+            button_QLNV_TimKiem.Name = "button_QLNV_TimKiem";
+            button_QLNV_TimKiem.Size = new Size(232, 43);
+            button_QLNV_TimKiem.TabIndex = 65;
+            button_QLNV_TimKiem.Text = "Tìm kiếm";
+            button_QLNV_TimKiem.TextAlign = ContentAlignment.MiddleRight;
+            button_QLNV_TimKiem.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_QLNV_TimKiem.UseVisualStyleBackColor = false;
+            // 
+            // button_QLNV_XuatFlie
+            // 
+            button_QLNV_XuatFlie.Anchor = AnchorStyles.None;
+            button_QLNV_XuatFlie.BackColor = Color.DeepSkyBlue;
+            button_QLNV_XuatFlie.Image = (Image)resources.GetObject("button_QLNV_XuatFlie.Image");
+            button_QLNV_XuatFlie.Location = new Point(691, 24);
+            button_QLNV_XuatFlie.Name = "button_QLNV_XuatFlie";
+            button_QLNV_XuatFlie.Size = new Size(98, 76);
+            button_QLNV_XuatFlie.TabIndex = 63;
+            button_QLNV_XuatFlie.Text = "Xuất file";
+            button_QLNV_XuatFlie.TextAlign = ContentAlignment.MiddleRight;
+            button_QLNV_XuatFlie.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_QLNV_XuatFlie.UseVisualStyleBackColor = false;
+            // 
+            // button_QLNV_Them
+            // 
+            button_QLNV_Them.Anchor = AnchorStyles.None;
+            button_QLNV_Them.BackColor = Color.DeepSkyBlue;
+            button_QLNV_Them.Image = (Image)resources.GetObject("button_QLNV_Them.Image");
+            button_QLNV_Them.Location = new Point(6, 27);
+            button_QLNV_Them.Name = "button_QLNV_Them";
+            button_QLNV_Them.Size = new Size(94, 76);
+            button_QLNV_Them.TabIndex = 61;
+            button_QLNV_Them.Text = "Thêm";
+            button_QLNV_Them.TextAlign = ContentAlignment.MiddleRight;
+            button_QLNV_Them.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_QLNV_Them.UseVisualStyleBackColor = false;
+            // 
+            // button_QLNV_LamMoi
+            // 
+            button_QLNV_LamMoi.Anchor = AnchorStyles.None;
+            button_QLNV_LamMoi.BackColor = Color.DeepSkyBlue;
+            button_QLNV_LamMoi.Image = (Image)resources.GetObject("button_QLNV_LamMoi.Image");
+            button_QLNV_LamMoi.Location = new Point(454, 24);
+            button_QLNV_LamMoi.Name = "button_QLNV_LamMoi";
+            button_QLNV_LamMoi.Size = new Size(99, 76);
+            button_QLNV_LamMoi.TabIndex = 64;
+            button_QLNV_LamMoi.Text = "Làm mới";
+            button_QLNV_LamMoi.TextAlign = ContentAlignment.MiddleRight;
+            button_QLNV_LamMoi.TextImageRelation = TextImageRelation.ImageBeforeText;
+            button_QLNV_LamMoi.UseVisualStyleBackColor = false;
+            // 
             // UC_QLHopDong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -544,7 +553,7 @@
             Controls.Add(panel1);
             Controls.Add(label10);
             Name = "UC_QLHopDong";
-            Size = new Size(1173, 537);
+            Size = new Size(1173, 570);
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -563,7 +572,6 @@
         private Panel panel2;
         private Panel panel3;
         private DataGridView dataGridView1;
-        private GroupBox groupBox2;
         private Label label10;
         private GroupBox groupBox1;
         private TextBox textBox3;
@@ -596,12 +604,12 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private TextBox textBox12;
-        private Button button4;
-        private Button button6;
-        private Button button5;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private GroupBox groupBox2;
+        private TextBox textBox_QLNV_TimKiem;
+        private Button button_QLNV_Sua;
+        private Button button_QLNV_TimKiem;
+        private Button button_QLNV_XuatFlie;
+        private Button button_QLNV_Them;
+        private Button button_QLNV_LamMoi;
     }
 }

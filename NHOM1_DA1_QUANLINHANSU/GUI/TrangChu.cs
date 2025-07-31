@@ -19,9 +19,9 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI
 
         private void LoadUC(UserControl uc)
         {
-            panelMain.Controls.Clear(); // Xóa control cũ
-            uc.Dock = DockStyle.Fill;   // Cho UserControl chiếm toàn bộ panel
-            panelMain.Controls.Add(uc); // Thêm vào panel
+            panelMain.Controls.Clear(); 
+            uc.Dock = DockStyle.Fill;   
+            panelMain.Controls.Add(uc); 
         }
 
 

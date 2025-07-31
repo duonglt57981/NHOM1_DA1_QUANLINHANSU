@@ -189,5 +189,15 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
         {
 
         }
+
+        private void UC_QLNhanVien_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
