@@ -129,7 +129,6 @@
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin hợp đồng";
-
             // 
             // textBox3
             // 
@@ -142,6 +141,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label5.ForeColor = SystemColors.HotTrack;
             label5.Location = new Point(8, 167);
             label5.Name = "label5";
             label5.Size = new Size(84, 19);
@@ -162,6 +162,7 @@
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label16.ForeColor = SystemColors.HotTrack;
             label16.Location = new Point(268, 167);
             label16.Name = "label16";
             label16.Size = new Size(98, 19);
@@ -181,6 +182,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label15.ForeColor = SystemColors.HotTrack;
             label15.Location = new Point(9, 345);
             label15.Name = "label15";
             label15.Size = new Size(82, 19);
@@ -199,6 +201,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label8.ForeColor = SystemColors.HotTrack;
             label8.Location = new Point(9, 136);
             label8.Name = "label8";
             label8.Size = new Size(100, 19);
@@ -291,6 +294,7 @@
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label14.ForeColor = SystemColors.HotTrack;
             label14.Location = new Point(268, 132);
             label14.Name = "label14";
             label14.Size = new Size(63, 19);
@@ -301,6 +305,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label13.ForeColor = SystemColors.HotTrack;
             label13.Location = new Point(268, 65);
             label13.Name = "label13";
             label13.Size = new Size(45, 19);
@@ -311,6 +316,7 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label12.ForeColor = SystemColors.HotTrack;
             label12.Location = new Point(267, 99);
             label12.Name = "label12";
             label12.Size = new Size(68, 19);
@@ -321,6 +327,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label11.ForeColor = SystemColors.HotTrack;
             label11.Location = new Point(8, 102);
             label11.Name = "label11";
             label11.Size = new Size(77, 19);
@@ -331,6 +338,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label9.ForeColor = SystemColors.HotTrack;
             label9.Location = new Point(8, 269);
             label9.Name = "label9";
             label9.Size = new Size(62, 19);
@@ -341,6 +349,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label7.ForeColor = SystemColors.HotTrack;
             label7.Location = new Point(9, 201);
             label7.Name = "label7";
             label7.Size = new Size(83, 19);
@@ -351,6 +360,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label6.ForeColor = SystemColors.HotTrack;
             label6.Location = new Point(8, 235);
             label6.Name = "label6";
             label6.Size = new Size(91, 19);
@@ -361,6 +371,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label4.ForeColor = SystemColors.HotTrack;
             label4.Location = new Point(8, 303);
             label4.Name = "label4";
             label4.Size = new Size(91, 19);
@@ -371,6 +382,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label3.ForeColor = SystemColors.HotTrack;
             label3.Location = new Point(267, 31);
             label3.Name = "label3";
             label3.Size = new Size(88, 19);
@@ -381,6 +393,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.HotTrack;
             label2.Location = new Point(8, 68);
             label2.Name = "label2";
             label2.Size = new Size(80, 19);
@@ -391,6 +404,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.HotTrack;
             label1.Location = new Point(8, 31);
             label1.Name = "label1";
             label1.Size = new Size(62, 19);
@@ -442,7 +456,6 @@
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Chức năng";
-
             // 
             // textBox12
             // 

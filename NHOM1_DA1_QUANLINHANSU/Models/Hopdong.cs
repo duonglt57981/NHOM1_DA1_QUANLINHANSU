@@ -21,6 +21,8 @@ public partial class Hopdong
 
     public double HeSoLuong { get; set; }
 
+    public double LuongCoBan { get; set; }
+
     public string TrangThai { get; set; } = null!;
 
     public int Idnv { get; set; }

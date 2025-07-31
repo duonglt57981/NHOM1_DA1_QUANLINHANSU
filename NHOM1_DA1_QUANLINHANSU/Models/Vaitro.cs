@@ -9,5 +9,7 @@ public partial class Vaitro
 
     public string TenVaiTro { get; set; } = null!;
 
+    public string? MoTa { get; set; }
+
     public virtual ICollection<Nhanvien> Nhanviens { get; set; } = new List<Nhanvien>();
 }

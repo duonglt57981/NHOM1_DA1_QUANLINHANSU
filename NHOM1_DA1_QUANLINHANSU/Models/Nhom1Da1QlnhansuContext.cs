@@ -29,8 +29,6 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
     public virtual DbSet<Loaihopdong> Loaihopdongs { get; set; }
 
-    public virtual DbSet<Luong> Luongs { get; set; }
-
     public virtual DbSet<Nhanvien> Nhanviens { get; set; }
 
     public virtual DbSet<Phongban> Phongbans { get; set; }
@@ -49,7 +47,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
     {
         modelBuilder.Entity<Baohiem>(entity =>
         {
-            entity.HasKey(e => e.IdbaoHiem).HasName("PK__BAOHIEM__6C8381777E220C94");
+            entity.HasKey(e => e.IdbaoHiem).HasName("PK__BAOHIEM__6C8381776E68E397");
 
             entity.ToTable("BAOHIEM");
 
@@ -68,7 +66,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
         modelBuilder.Entity<Chamcong>(entity =>
         {
-            entity.HasKey(e => e.IdchamCong).HasName("PK__CHAMCONG__AC232BEE6F1A2ED4");
+            entity.HasKey(e => e.IdchamCong).HasName("PK__CHAMCONG__AC232BEEB66CCD65");
 
             entity.ToTable("CHAMCONG");
 
@@ -84,17 +82,17 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
             entity.HasOne(d => d.IdloaiCongNavigation).WithMany(p => p.Chamcongs)
                 .HasForeignKey(d => d.IdloaiCong)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__CHAMCONG__IDLoai__5441852A");
+                .HasConstraintName("FK__CHAMCONG__IDLoai__4316F928");
 
             entity.HasOne(d => d.IdnvNavigation).WithMany(p => p.Chamcongs)
                 .HasForeignKey(d => d.Idnv)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__CHAMCONG__IDNV__534D60F1");
+                .HasConstraintName("FK__CHAMCONG__IDNV__4222D4EF");
         });
 
         modelBuilder.Entity<Congviec>(entity =>
         {
-            entity.HasKey(e => e.IdcongViec).HasName("PK__CONGVIEC__6D97AEE4658C5000");
+            entity.HasKey(e => e.IdcongViec).HasName("PK__CONGVIEC__6D97AEE42E759900");
 
             entity.ToTable("CONGVIEC");
 
@@ -106,7 +104,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
         modelBuilder.Entity<Hopdong>(entity =>
         {
-            entity.HasKey(e => e.SoHopDong).HasName("PK__HOPDONG__71C5D5BAA55FB86D");
+            entity.HasKey(e => e.SoHopDong).HasName("PK__HOPDONG__71C5D5BA6D8BED1F");
 
             entity.ToTable("HOPDONG");
 
@@ -120,17 +118,17 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
             entity.HasOne(d => d.IdloaiHdNavigation).WithMany(p => p.Hopdongs)
                 .HasForeignKey(d => d.IdloaiHd)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__HOPDONG__IDLoaiH__403A8C7D");
+                .HasConstraintName("FK__HOPDONG__IDLoaiH__3D5E1FD2");
 
             entity.HasOne(d => d.IdnvNavigation).WithMany(p => p.Hopdongs)
                 .HasForeignKey(d => d.Idnv)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__HOPDONG__IDNV__3F466844");
+                .HasConstraintName("FK__HOPDONG__IDNV__3C69FB99");
         });
 
         modelBuilder.Entity<KhenthuongKiluat>(entity =>
         {
-            entity.HasKey(e => e.IdktKl).HasName("PK__KHENTHUO__326968ECB77E71D0");
+            entity.HasKey(e => e.IdktKl).HasName("PK__KHENTHUO__326968ECF9690DDA");
 
             entity.ToTable("KHENTHUONG_KILUAT");
 
@@ -147,7 +145,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
         modelBuilder.Entity<Loaicong>(entity =>
         {
-            entity.HasKey(e => e.IdloaiCong).HasName("PK__LOAICONG__8E9A196C7BBF62C9");
+            entity.HasKey(e => e.IdloaiCong).HasName("PK__LOAICONG__8E9A196C8B3B45C4");
 
             entity.ToTable("LOAICONG");
 
@@ -159,7 +157,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
         modelBuilder.Entity<Loaihopdong>(entity =>
         {
-            entity.HasKey(e => e.IdloaiHopDong).HasName("PK__LOAIHOPD__6C2A0CFFC31EBE92");
+            entity.HasKey(e => e.IdloaiHopDong).HasName("PK__LOAIHOPD__6C2A0CFF64E7E4CD");
 
             entity.ToTable("LOAIHOPDONG");
 
@@ -169,28 +167,9 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
             entity.Property(e => e.TenHopDong).HasMaxLength(50);
         });
 
-        modelBuilder.Entity<Luong>(entity =>
-        {
-            entity.HasKey(e => e.Idluong).HasName("PK__LUONG__AFAF1A6F1DC69017");
-
-            entity.ToTable("LUONG");
-
-            entity.Property(e => e.Idluong).HasColumnName("IDLuong");
-            entity.Property(e => e.Idnv).HasColumnName("IDNV");
-            entity.Property(e => e.Nam).HasColumnName("NAM");
-            entity.Property(e => e.Ngay).HasColumnName("NGAY");
-            entity.Property(e => e.Thang).HasColumnName("THANG");
-            entity.Property(e => e.TrangThai).HasMaxLength(50);
-
-            entity.HasOne(d => d.IdnvNavigation).WithMany(p => p.Luongs)
-                .HasForeignKey(d => d.Idnv)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__LUONG__IDNV__3A81B327");
-        });
-
         modelBuilder.Entity<Nhanvien>(entity =>
         {
-            entity.HasKey(e => e.Idnv).HasName("PK__NHANVIEN__B87DC9B2AD9765A3");
+            entity.HasKey(e => e.Idnv).HasName("PK__NHANVIEN__B87DC9B279E7DA18");
 
             entity.ToTable("NHANVIEN");
 
@@ -239,7 +218,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
         modelBuilder.Entity<Phongban>(entity =>
         {
-            entity.HasKey(e => e.IdphongBan).HasName("PK__PHONGBAN__1F6C42EFB3827294");
+            entity.HasKey(e => e.IdphongBan).HasName("PK__PHONGBAN__1F6C42EFCE5500DA");
 
             entity.ToTable("PHONGBAN");
 
@@ -278,7 +257,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
         modelBuilder.Entity<Trinhdo>(entity =>
         {
-            entity.HasKey(e => e.IdtrinhDo).HasName("PK__TRINHDO__2BBB82348EC743C1");
+            entity.HasKey(e => e.IdtrinhDo).HasName("PK__TRINHDO__2BBB8234EFE9707E");
 
             entity.ToTable("TRINHDO");
 
@@ -290,7 +269,7 @@ public partial class Nhom1Da1QlnhansuContext : DbContext
 
         modelBuilder.Entity<Vaitro>(entity =>
         {
-            entity.HasKey(e => e.IdvaiTro).HasName("PK__VAITRO__45D3FF493649328C");
+            entity.HasKey(e => e.IdvaiTro).HasName("PK__VAITRO__45D3FF49BEE89E86");
 
             entity.ToTable("VAITRO");
 

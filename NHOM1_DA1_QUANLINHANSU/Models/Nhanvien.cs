@@ -48,6 +48,4 @@ public partial class Nhanvien
     public virtual Vaitro IdvaiTroNavigation { get; set; } = null!;
 
     public virtual ICollection<KhenthuongKiluat> KhenthuongKiluats { get; set; } = new List<KhenthuongKiluat>();
-
-    public virtual ICollection<Luong> Luongs { get; set; } = new List<Luong>();
 }
