@@ -187,6 +187,7 @@
             panelMain.Name = "panelMain";
             panelMain.Size = new Size(945, 570);
             panelMain.TabIndex = 2;
+            panelMain.Paint += panelMain_Paint;
             // 
             // TrangChu
             // 
