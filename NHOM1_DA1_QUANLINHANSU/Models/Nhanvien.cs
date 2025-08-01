@@ -7,6 +7,7 @@ public partial class Nhanvien
 {
     public int Idnv { get; set; }
 
+ 
     public string TenNv { get; set; } = null!;
 
     public string GioiTinh { get; set; } = null!;

@@ -1,4 +1,6 @@
-﻿using NHOM1_DA1_QUANLINHANSU.Models;
+﻿using DocumentFormat.OpenXml.Spreadsheet;
+using NHOM1_DA1_QUANLINHANSU.DTO;
+using NHOM1_DA1_QUANLINHANSU.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,10 +21,14 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
         {
             InitializeComponent();
             LoadNV();
+            LoadPhongBan();
             LoadCongViec();
             LoadTrinhDo();
             LoadTrangThai();
             LoadGioiTinh();
+            LoadID();
+            dataGridView_QLNV.Columns["HinhAnh"].Visible = false;
+            dataGridView_QLNV.Columns["TenTaiKhoan"].Visible = false;
         }
 
         public void LoadNV()
@@ -68,20 +74,22 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
 
         public void LoadID()
         {
-            comboBox_IDTaiKhoan.DataSource = IDTaiKhoan;
+            comboBox_IDTaiKhoan.DataSource = QLNV_BLL.GetTaiKhoan();
+            comboBox_IDTaiKhoan.DisplayMember = "TenTaiKhoan";
+            comboBox_IDTaiKhoan.ValueMember = "IdtaiKhoan";
         }
 
         private void button_QLNV_Them_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBox_QLNV_TenNV.Text)
-                || !string.IsNullOrEmpty(textBox_QLNV_SDT.Text)
-                || !string.IsNullOrEmpty(textBox_QLNV_CCCD.Text)
-                || !string.IsNullOrEmpty(textBox_QLNV_TienPC.Text)
-                || !string.IsNullOrEmpty(comboBox_QLNV_TT.Text)
-                || !string.IsNullOrEmpty(comboBox_QLNV_GT.Text)
-                || !string.IsNullOrEmpty(comboBox_QLNV_PB.Text)
-                || !string.IsNullOrEmpty(comboBox_QLNV_CV.Text)
-                || !string.IsNullOrEmpty(comboBox_QLNV_TD.Text))
+            if (string.IsNullOrEmpty(textBox_QLNV_TenNV.Text)
+                || string.IsNullOrEmpty(textBox_QLNV_SDT.Text)
+                || string.IsNullOrEmpty(textBox_QLNV_CCCD.Text)
+                || string.IsNullOrEmpty(textBox_QLNV_TienPC.Text)
+                || string.IsNullOrEmpty(comboBox_QLNV_TT.Text)
+                || string.IsNullOrEmpty(comboBox_QLNV_GT.Text)
+                || string.IsNullOrEmpty(comboBox_QLNV_PB.Text)
+                || string.IsNullOrEmpty(comboBox_QLNV_CV.Text)
+                || string.IsNullOrEmpty(comboBox_QLNV_TD.Text))
             {
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -116,12 +124,13 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
                 HinhAnh = hinhAnhByte,
                 SoTienPhuCap = float.Parse(textBox_QLNV_TienPC.Text),
                 TrangThai = comboBox_QLNV_TT.Text,
+                IdtaiKhoan = int.Parse(comboBox_IDTaiKhoan.SelectedValue.ToString()),
                 IdphongBan = (int)comboBox_QLNV_PB.SelectedValue,
                 IdcongViec = (int)comboBox_QLNV_CV.SelectedValue,
                 IdtrinhDo = (int)comboBox_QLNV_TD.SelectedValue
             };
-
             QLNV_BLL.ThemNhanVien(nv);
+            LoadNV();
 
         }
 
@@ -179,7 +188,7 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
             comboBox_QLNV_PB.Text = dataGridView_QLNV.Rows[e.RowIndex].Cells["TenPhongBan"].Value.ToString();
             comboBox_QLNV_TD.Text = dataGridView_QLNV.Rows[e.RowIndex].Cells["TenTrinhDo"].Value.ToString();
             comboBox_QLNV_CV.Text = dataGridView_QLNV.Rows[e.RowIndex].Cells["TenCongViec"].Value.ToString();
-            comboBox_IDTaiKhoan.Text = dataGridView_QLNV.Rows[e.RowIndex].Cells["IdtaiKhoan"].Value.ToString();
+            comboBox_IDTaiKhoan.Text = dataGridView_QLNV.Rows[e.RowIndex].Cells["TenTaiKhoan"].Value.ToString();
 
         }
 
@@ -189,11 +198,30 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
             textBox_QLNV_SDT.Clear();
             textBox_QLNV_CCCD.Clear();
             textBox_QLNV_DiaChi.Clear();
+            pictureBox_QLNV.Image = null;
         }
 
         private void button_QLNV_Sua_Click(object sender, EventArgs e)
         {
-
+            Nhanvien nhanvien = new Nhanvien
+            {
+                Idnv = int.Parse(textBox_QLNV_ID.Text),
+                TenNv = textBox_QLNV_TenNV.Text,
+                GioiTinh = comboBox_QLNV_GT.Text,
+                NgaySinh = DateOnly.FromDateTime(dateTimePicker_QLNV_NgaySinh.Value),
+                Sdt = textBox_QLNV_SDT.Text,
+                Cccd = textBox_QLNV_CCCD.Text,
+                DiaChi = textBox_QLNV_DiaChi.Text,
+                HinhAnh = hinhAnhByte,
+                SoTienPhuCap = float.Parse(textBox_QLNV_TienPC.Text),
+                TrangThai = comboBox_QLNV_TT.Text,
+                IdtaiKhoan = int.Parse(comboBox_IDTaiKhoan.SelectedValue.ToString()),
+                IdphongBan = (int)comboBox_QLNV_PB.SelectedValue,
+                IdcongViec = (int)comboBox_QLNV_CV.SelectedValue,
+                IdtrinhDo = (int)comboBox_QLNV_TD.SelectedValue
+            };
+            QLNV_BLL.SuaNhanVien(nhanvien);
+            LoadNV();
         }
 
         private void button_QLNV_XuatFlie_Click(object sender, EventArgs e)
@@ -201,12 +229,41 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void button_QLNV_TinhLuong_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button_QLNV_TinhLuong_Click(object sender, EventArgs e)
+        private void button_TimKiem_Click(object sender, EventArgs e)
+        {
+            string tuKhoa = textBox_TimKiem.Text.Trim();
+
+            if (string.IsNullOrEmpty(tuKhoa))
+            {
+                MessageBox.Show("Vui lòng nhập từ khóa tìm kiếm!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            List<DTO_QLNhanVien> ketQua = QLNV_BLL.TimKiemNV(tuKhoa);
+
+            if (ketQua.Any())
+            {
+                dataGridView_QLNV.DataSource = ketQua;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy thông tin nào nào với từ khóa: " + tuKhoa, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadNV();
+            }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
         {
 
         }

@@ -32,9 +32,24 @@ namespace NHOM1_DA1_QUANLINHANSU.BLL
             return QLNV_DAL.GetTrinhDo();
         }
 
+        public List<Taikhoan> GetTaiKhoan()
+        {
+            return QLNV_DAL.GetTaiKhoan();
+        }
+
         public void ThemNhanVien(Nhanvien nv)
         {
             QLNV_DAL.ThemNhanVien(nv);
+        }
+
+        public void SuaNhanVien(Nhanvien NewNV)
+        {
+             QLNV_DAL.SuaNhanVien(NewNV);
+        }
+
+        public List<DTO_QLNhanVien> TimKiemNV(string tuKhoa)
+        {
+            return QLNV_DAL.TimKiemNV(tuKhoa);
         }
     }
 }

@@ -40,11 +40,11 @@
             label3.Anchor = AnchorStyles.Top;
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(77, 108);
+            label3.Location = new Point(84, 108);
             label3.Name = "label3";
-            label3.Size = new Size(781, 26);
+            label3.Size = new Size(747, 26);
             label3.TabIndex = 5;
-            label3.Text = "  Khám phá  những tiện ích hỗ trợ để quản lí nhân sự tăng hiệu suất giảm nhân lực ";
+            label3.Text = "  Khám phá những tiện ích hỗ trợ quản lí nhân sự tăng hiệu suất giảm nhân lực ";
             // 
             // label2
             // 
