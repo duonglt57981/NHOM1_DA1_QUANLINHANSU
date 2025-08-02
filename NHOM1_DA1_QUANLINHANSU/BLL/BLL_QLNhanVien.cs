@@ -18,6 +18,11 @@ namespace NHOM1_DA1_QUANLINHANSU.BLL
             return QLNV_DAL.GetAllNhanVien();
         }
 
+        public void KiemTraTaiKhoan(int IDTK)
+        {
+            QLNV_DAL.KiemTraTaiKhoan(IDTK);
+        }
+
         public List<Phongban> GetPhongBAN()
         {
             return QLNV_DAL.GetPhongBAN();
@@ -39,7 +44,15 @@ namespace NHOM1_DA1_QUANLINHANSU.BLL
 
         public void ThemNhanVien(Nhanvien nv)
         {
-            QLNV_DAL.ThemNhanVien(nv);
+            if (QLNV_DAL.KiemTraTaiKhoan(nv.IdtaiKhoan))
+            {
+                var KT = MessageBox.Show("Tài Khoản này đã được đăng kí cho nhân viên!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            else
+            {
+                QLNV_DAL.ThemNhanVien(nv);
+            }     
         }
 
         public void SuaNhanVien(Nhanvien NewNV)

@@ -31,25 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_QLHopDong));
             panel1 = new Panel();
             groupBox1 = new GroupBox();
-            textBox3 = new TextBox();
-            label5 = new Label();
-            textBox11 = new TextBox();
+            comboBox_QLHD_IDNV = new ComboBox();
+            label10 = new Label();
+            comboBox_QLHD_LoaiHopDong = new ComboBox();
             label16 = new Label();
-            textBox10 = new TextBox();
+            textBox_QLHD_HeSoLuong = new TextBox();
+            label5 = new Label();
+            textBox_NoiDung = new TextBox();
             label15 = new Label();
-            dateTimePicker3 = new DateTimePicker();
+            dateTimePicker_NgayKiHD = new DateTimePicker();
             label8 = new Label();
-            textBox5 = new TextBox();
-            textBox9 = new TextBox();
-            comboBox1 = new ComboBox();
-            textBox8 = new TextBox();
-            dateTimePicker2 = new DateTimePicker();
-            dateTimePicker1 = new DateTimePicker();
-            textBox7 = new TextBox();
-            textBox6 = new TextBox();
-            textBox4 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            textBox_QLHD_SDT = new TextBox();
+            textBox_QLHD_LanKi = new TextBox();
+            comboBox_QLHD_TrangThai = new ComboBox();
+            textBox_QLHD_CCCD = new TextBox();
+            dateTimePicker_QLHD_NgayKT = new DateTimePicker();
+            dateTimePicker_QLHD_NgayBD = new DateTimePicker();
+            textBox_QLHD_ThoiHan = new TextBox();
+            textBox_QLHD_LuongCB = new TextBox();
+            textBox_QLHD_DC = new TextBox();
+            textBox_QLHD_HoTen = new TextBox();
+            textBox_QLHD_SoHD = new TextBox();
             label14 = new Label();
             label13 = new Label();
             label12 = new Label();
@@ -61,10 +63,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            panel2 = new Panel();
-            dataGridView1 = new DataGridView();
             panel3 = new Panel();
-            label10 = new Label();
             groupBox2 = new GroupBox();
             textBox_QLNV_TimKiem = new TextBox();
             button_QLNV_Sua = new Button();
@@ -72,45 +71,49 @@
             button_QLNV_XuatFlie = new Button();
             button_QLNV_Them = new Button();
             button_QLNV_LamMoi = new Button();
+            panel2 = new Panel();
+            dataGridView_QLHD = new DataGridView();
             panel1.SuspendLayout();
             groupBox1.SuspendLayout();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel3.SuspendLayout();
             groupBox2.SuspendLayout();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView_QLHD).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.Controls.Add(groupBox1);
-            panel1.Location = new Point(0, 0);
+            panel1.Location = new Point(10, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(669, 452);
+            panel1.Size = new Size(1043, 291);
             panel1.TabIndex = 1;
             // 
             // groupBox1
             // 
-            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            groupBox1.Controls.Add(textBox3);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox11);
+            groupBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            groupBox1.Controls.Add(comboBox_QLHD_IDNV);
+            groupBox1.Controls.Add(label10);
+            groupBox1.Controls.Add(comboBox_QLHD_LoaiHopDong);
             groupBox1.Controls.Add(label16);
-            groupBox1.Controls.Add(textBox10);
+            groupBox1.Controls.Add(textBox_QLHD_HeSoLuong);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(textBox_NoiDung);
             groupBox1.Controls.Add(label15);
-            groupBox1.Controls.Add(dateTimePicker3);
+            groupBox1.Controls.Add(dateTimePicker_NgayKiHD);
             groupBox1.Controls.Add(label8);
-            groupBox1.Controls.Add(textBox5);
-            groupBox1.Controls.Add(textBox9);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox8);
-            groupBox1.Controls.Add(dateTimePicker2);
-            groupBox1.Controls.Add(dateTimePicker1);
-            groupBox1.Controls.Add(textBox7);
-            groupBox1.Controls.Add(textBox6);
-            groupBox1.Controls.Add(textBox4);
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(textBox_QLHD_SDT);
+            groupBox1.Controls.Add(textBox_QLHD_LanKi);
+            groupBox1.Controls.Add(comboBox_QLHD_TrangThai);
+            groupBox1.Controls.Add(textBox_QLHD_CCCD);
+            groupBox1.Controls.Add(dateTimePicker_QLHD_NgayKT);
+            groupBox1.Controls.Add(dateTimePicker_QLHD_NgayBD);
+            groupBox1.Controls.Add(textBox_QLHD_ThoiHan);
+            groupBox1.Controls.Add(textBox_QLHD_LuongCB);
+            groupBox1.Controls.Add(textBox_QLHD_DC);
+            groupBox1.Controls.Add(textBox_QLHD_HoTen);
+            groupBox1.Controls.Add(textBox_QLHD_SoHD);
             groupBox1.Controls.Add(label14);
             groupBox1.Controls.Add(label13);
             groupBox1.Controls.Add(label12);
@@ -123,179 +126,204 @@
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.Location = new Point(3, 3);
+            groupBox1.Location = new Point(0, 3);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(660, 446);
+            groupBox1.Size = new Size(1042, 288);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông tin hợp đồng";
+            groupBox1.Enter += groupBox1_Enter;
             // 
-            // textBox3
+            // comboBox_QLHD_IDNV
             // 
-            textBox3.Location = new Point(105, 163);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(137, 28);
-            textBox3.TabIndex = 37;
+            comboBox_QLHD_IDNV.FormattingEnabled = true;
+            comboBox_QLHD_IDNV.Location = new Point(649, 33);
+            comboBox_QLHD_IDNV.Name = "comboBox_QLHD_IDNV";
+            comboBox_QLHD_IDNV.Size = new Size(205, 28);
+            comboBox_QLHD_IDNV.TabIndex = 41;
+            comboBox_QLHD_IDNV.SelectedIndexChanged += comboBox_QLHD_IDNV_SelectedIndexChanged;
             // 
-            // label5
+            // label10
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
-            label5.ForeColor = SystemColors.HotTrack;
-            label5.Location = new Point(8, 167);
-            label5.Name = "label5";
-            label5.Size = new Size(84, 19);
-            label5.TabIndex = 36;
-            label5.Text = "HS lương:";
+            label10.AutoSize = true;
+            label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label10.ForeColor = SystemColors.HotTrack;
+            label10.Location = new Point(574, 37);
+            label10.Name = "label10";
+            label10.Size = new Size(58, 19);
+            label10.TabIndex = 40;
+            label10.Text = "ID NV:";
             // 
-            // textBox11
+            // comboBox_QLHD_LoaiHopDong
             // 
-            textBox11.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox11.Location = new Point(268, 189);
-            textBox11.Multiline = true;
-            textBox11.Name = "textBox11";
-            textBox11.ReadOnly = true;
-            textBox11.Size = new Size(380, 245);
-            textBox11.TabIndex = 35;
+            comboBox_QLHD_LoaiHopDong.FormattingEnabled = true;
+            comboBox_QLHD_LoaiHopDong.Location = new Point(108, 234);
+            comboBox_QLHD_LoaiHopDong.Name = "comboBox_QLHD_LoaiHopDong";
+            comboBox_QLHD_LoaiHopDong.Size = new Size(154, 28);
+            comboBox_QLHD_LoaiHopDong.TabIndex = 39;
             // 
             // label16
             // 
             label16.AutoSize = true;
             label16.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label16.ForeColor = SystemColors.HotTrack;
-            label16.Location = new Point(268, 167);
+            label16.Location = new Point(6, 238);
             label16.Name = "label16";
-            label16.Size = new Size(98, 19);
-            label16.TabIndex = 34;
-            label16.Text = "Điều khoản:";
+            label16.Size = new Size(78, 19);
+            label16.TabIndex = 38;
+            label16.Text = "Loại HĐ:";
             // 
-            // textBox10
+            // textBox_QLHD_HeSoLuong
             // 
-            textBox10.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
-            textBox10.Location = new Point(9, 367);
-            textBox10.Multiline = true;
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(233, 67);
-            textBox10.TabIndex = 33;
+            textBox_QLHD_HeSoLuong.Location = new Point(386, 134);
+            textBox_QLHD_HeSoLuong.Name = "textBox_QLHD_HeSoLuong";
+            textBox_QLHD_HeSoLuong.Size = new Size(159, 28);
+            textBox_QLHD_HeSoLuong.TabIndex = 37;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
+            label5.ForeColor = SystemColors.HotTrack;
+            label5.Location = new Point(289, 141);
+            label5.Name = "label5";
+            label5.Size = new Size(84, 19);
+            label5.TabIndex = 36;
+            label5.Text = "HS lương:";
+            // 
+            // textBox_NoiDung
+            // 
+            textBox_NoiDung.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox_NoiDung.Location = new Point(955, 33);
+            textBox_NoiDung.Multiline = true;
+            textBox_NoiDung.Name = "textBox_NoiDung";
+            textBox_NoiDung.ReadOnly = true;
+            textBox_NoiDung.Size = new Size(81, 179);
+            textBox_NoiDung.TabIndex = 33;
             // 
             // label15
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label15.ForeColor = SystemColors.HotTrack;
-            label15.Location = new Point(9, 345);
+            label15.Location = new Point(876, 37);
             label15.Name = "label15";
             label15.Size = new Size(82, 19);
             label15.TabIndex = 32;
             label15.Text = "Nội dung:";
             // 
-            // dateTimePicker3
+            // dateTimePicker_NgayKiHD
             // 
-            dateTimePicker3.Format = DateTimePickerFormat.Short;
-            dateTimePicker3.Location = new Point(105, 129);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(137, 28);
-            dateTimePicker3.TabIndex = 31;
+            dateTimePicker_NgayKiHD.Format = DateTimePickerFormat.Short;
+            dateTimePicker_NgayKiHD.Location = new Point(108, 181);
+            dateTimePicker_NgayKiHD.Name = "dateTimePicker_NgayKiHD";
+            dateTimePicker_NgayKiHD.Size = new Size(154, 28);
+            dateTimePicker_NgayKiHD.TabIndex = 31;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label8.ForeColor = SystemColors.HotTrack;
-            label8.Location = new Point(9, 136);
+            label8.Location = new Point(5, 185);
             label8.Name = "label8";
             label8.Size = new Size(100, 19);
             label8.TabIndex = 29;
             label8.Text = "Ngày kí HĐ:";
             // 
-            // textBox5
+            // textBox_QLHD_SDT
             // 
-            textBox5.Location = new Point(361, 61);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(287, 28);
-            textBox5.TabIndex = 28;
+            textBox_QLHD_SDT.Location = new Point(649, 131);
+            textBox_QLHD_SDT.Name = "textBox_QLHD_SDT";
+            textBox_QLHD_SDT.ReadOnly = true;
+            textBox_QLHD_SDT.Size = new Size(205, 28);
+            textBox_QLHD_SDT.TabIndex = 28;
             // 
-            // textBox9
+            // textBox_QLHD_LanKi
             // 
-            textBox9.Location = new Point(105, 265);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(137, 28);
-            textBox9.TabIndex = 25;
+            textBox_QLHD_LanKi.Location = new Point(386, 183);
+            textBox_QLHD_LanKi.Name = "textBox_QLHD_LanKi";
+            textBox_QLHD_LanKi.Size = new Size(159, 28);
+            textBox_QLHD_LanKi.TabIndex = 25;
             // 
-            // comboBox1
+            // comboBox_QLHD_TrangThai
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(105, 303);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(137, 28);
-            comboBox1.TabIndex = 24;
+            comboBox_QLHD_TrangThai.FormattingEnabled = true;
+            comboBox_QLHD_TrangThai.Location = new Point(386, 32);
+            comboBox_QLHD_TrangThai.Name = "comboBox_QLHD_TrangThai";
+            comboBox_QLHD_TrangThai.Size = new Size(159, 28);
+            comboBox_QLHD_TrangThai.TabIndex = 24;
             // 
-            // textBox8
+            // textBox_QLHD_CCCD
             // 
-            textBox8.Location = new Point(361, 128);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(287, 28);
-            textBox8.TabIndex = 23;
+            textBox_QLHD_CCCD.Location = new Point(649, 184);
+            textBox_QLHD_CCCD.Name = "textBox_QLHD_CCCD";
+            textBox_QLHD_CCCD.ReadOnly = true;
+            textBox_QLHD_CCCD.Size = new Size(205, 28);
+            textBox_QLHD_CCCD.TabIndex = 23;
             // 
-            // dateTimePicker2
+            // dateTimePicker_QLHD_NgayKT
             // 
-            dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(105, 95);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(137, 28);
-            dateTimePicker2.TabIndex = 22;
+            dateTimePicker_QLHD_NgayKT.Format = DateTimePickerFormat.Short;
+            dateTimePicker_QLHD_NgayKT.Location = new Point(108, 132);
+            dateTimePicker_QLHD_NgayKT.Name = "dateTimePicker_QLHD_NgayKT";
+            dateTimePicker_QLHD_NgayKT.Size = new Size(154, 28);
+            dateTimePicker_QLHD_NgayKT.TabIndex = 22;
             // 
-            // dateTimePicker1
+            // dateTimePicker_QLHD_NgayBD
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(105, 61);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(137, 28);
-            dateTimePicker1.TabIndex = 21;
+            dateTimePicker_QLHD_NgayBD.Format = DateTimePickerFormat.Short;
+            dateTimePicker_QLHD_NgayBD.Location = new Point(108, 81);
+            dateTimePicker_QLHD_NgayBD.Name = "dateTimePicker_QLHD_NgayBD";
+            dateTimePicker_QLHD_NgayBD.Size = new Size(154, 28);
+            dateTimePicker_QLHD_NgayBD.TabIndex = 21;
             // 
-            // textBox7
+            // textBox_QLHD_ThoiHan
             // 
-            textBox7.Location = new Point(105, 197);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(137, 28);
-            textBox7.TabIndex = 20;
+            textBox_QLHD_ThoiHan.Location = new Point(386, 81);
+            textBox_QLHD_ThoiHan.Name = "textBox_QLHD_ThoiHan";
+            textBox_QLHD_ThoiHan.Size = new Size(159, 28);
+            textBox_QLHD_ThoiHan.TabIndex = 20;
             // 
-            // textBox6
+            // textBox_QLHD_LuongCB
             // 
-            textBox6.Location = new Point(105, 231);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(137, 28);
-            textBox6.TabIndex = 19;
+            textBox_QLHD_LuongCB.Location = new Point(386, 236);
+            textBox_QLHD_LuongCB.Name = "textBox_QLHD_LuongCB";
+            textBox_QLHD_LuongCB.Size = new Size(159, 28);
+            textBox_QLHD_LuongCB.TabIndex = 19;
             // 
-            // textBox4
+            // textBox_QLHD_DC
             // 
-            textBox4.Location = new Point(361, 95);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(287, 28);
-            textBox4.TabIndex = 17;
+            textBox_QLHD_DC.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            textBox_QLHD_DC.Location = new Point(649, 234);
+            textBox_QLHD_DC.Name = "textBox_QLHD_DC";
+            textBox_QLHD_DC.ReadOnly = true;
+            textBox_QLHD_DC.Size = new Size(387, 28);
+            textBox_QLHD_DC.TabIndex = 17;
             // 
-            // textBox2
+            // textBox_QLHD_HoTen
             // 
-            textBox2.Location = new Point(361, 27);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(287, 28);
-            textBox2.TabIndex = 15;
+            textBox_QLHD_HoTen.Location = new Point(649, 81);
+            textBox_QLHD_HoTen.Name = "textBox_QLHD_HoTen";
+            textBox_QLHD_HoTen.ReadOnly = true;
+            textBox_QLHD_HoTen.Size = new Size(205, 28);
+            textBox_QLHD_HoTen.TabIndex = 15;
             // 
-            // textBox1
+            // textBox_QLHD_SoHD
             // 
-            textBox1.CausesValidation = false;
-            textBox1.Location = new Point(105, 27);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(137, 28);
-            textBox1.TabIndex = 14;
+            textBox_QLHD_SoHD.CausesValidation = false;
+            textBox_QLHD_SoHD.Location = new Point(108, 32);
+            textBox_QLHD_SoHD.Name = "textBox_QLHD_SoHD";
+            textBox_QLHD_SoHD.ReadOnly = true;
+            textBox_QLHD_SoHD.Size = new Size(154, 28);
+            textBox_QLHD_SoHD.TabIndex = 14;
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label14.ForeColor = SystemColors.HotTrack;
-            label14.Location = new Point(268, 132);
+            label14.Location = new Point(574, 193);
             label14.Name = "label14";
             label14.Size = new Size(63, 19);
             label14.TabIndex = 13;
@@ -306,7 +334,7 @@
             label13.AutoSize = true;
             label13.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label13.ForeColor = SystemColors.HotTrack;
-            label13.Location = new Point(268, 65);
+            label13.Location = new Point(574, 141);
             label13.Name = "label13";
             label13.Size = new Size(45, 19);
             label13.TabIndex = 12;
@@ -317,7 +345,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label12.ForeColor = SystemColors.HotTrack;
-            label12.Location = new Point(267, 99);
+            label12.Location = new Point(574, 236);
             label12.Name = "label12";
             label12.Size = new Size(68, 19);
             label12.TabIndex = 11;
@@ -328,7 +356,7 @@
             label11.AutoSize = true;
             label11.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label11.ForeColor = SystemColors.HotTrack;
-            label11.Location = new Point(8, 102);
+            label11.Location = new Point(5, 136);
             label11.Name = "label11";
             label11.Size = new Size(77, 19);
             label11.TabIndex = 10;
@@ -339,7 +367,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label9.ForeColor = SystemColors.HotTrack;
-            label9.Location = new Point(8, 269);
+            label9.Location = new Point(290, 187);
             label9.Name = "label9";
             label9.Size = new Size(62, 19);
             label9.TabIndex = 8;
@@ -350,7 +378,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label7.ForeColor = SystemColors.HotTrack;
-            label7.Location = new Point(9, 201);
+            label7.Location = new Point(290, 85);
             label7.Name = "label7";
             label7.Size = new Size(83, 19);
             label7.TabIndex = 6;
@@ -361,7 +389,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label6.ForeColor = SystemColors.HotTrack;
-            label6.Location = new Point(8, 235);
+            label6.Location = new Point(290, 240);
             label6.Name = "label6";
             label6.Size = new Size(91, 19);
             label6.TabIndex = 5;
@@ -372,7 +400,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label4.ForeColor = SystemColors.HotTrack;
-            label4.Location = new Point(8, 303);
+            label4.Location = new Point(289, 36);
             label4.Name = "label4";
             label4.Size = new Size(91, 19);
             label4.TabIndex = 3;
@@ -383,18 +411,18 @@
             label3.AutoSize = true;
             label3.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label3.ForeColor = SystemColors.HotTrack;
-            label3.Location = new Point(267, 31);
+            label3.Location = new Point(574, 88);
             label3.Name = "label3";
-            label3.Size = new Size(88, 19);
+            label3.Size = new Size(67, 19);
             label3.TabIndex = 2;
-            label3.Text = "Họ và Tên:";
+            label3.Text = "Tên NV:";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
             label2.ForeColor = SystemColors.HotTrack;
-            label2.Location = new Point(8, 68);
+            label2.Location = new Point(6, 83);
             label2.Name = "label2";
             label2.Size = new Size(80, 19);
             label2.TabIndex = 1;
@@ -405,49 +433,20 @@
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.HotTrack;
-            label1.Location = new Point(8, 31);
+            label1.Location = new Point(6, 36);
             label1.Name = "label1";
             label1.Size = new Size(62, 19);
             label1.TabIndex = 0;
             label1.Text = "Số HĐ:";
             // 
-            // panel2
-            // 
-            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panel2.Controls.Add(dataGridView1);
-            panel2.Location = new Point(675, 0);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(497, 452);
-            panel2.TabIndex = 2;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(0, 12);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(491, 437);
-            dataGridView1.TabIndex = 0;
-            // 
             // panel3
             // 
             panel3.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel3.Controls.Add(groupBox2);
-            panel3.Location = new Point(0, 458);
+            panel3.Location = new Point(10, 481);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1173, 112);
+            panel3.Size = new Size(1046, 112);
             panel3.TabIndex = 3;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Times New Roman", 10.2F, FontStyle.Bold);
-            label10.Location = new Point(457, 364);
-            label10.Name = "label10";
-            label10.Size = new Size(152, 19);
-            label10.TabIndex = 9;
-            label10.Text = "Ngày Kí Hợp Đồng:";
             // 
             // groupBox2
             // 
@@ -459,9 +458,9 @@
             groupBox2.Controls.Add(button_QLNV_Them);
             groupBox2.Controls.Add(button_QLNV_LamMoi);
             groupBox2.Font = new Font("Times New Roman", 10.8F, FontStyle.Bold);
-            groupBox2.Location = new Point(3, 3);
+            groupBox2.Location = new Point(0, 3);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(1166, 106);
+            groupBox2.Size = new Size(1042, 106);
             groupBox2.TabIndex = 0;
             groupBox2.TabStop = false;
             groupBox2.Text = "Chức năng";
@@ -469,17 +468,22 @@
             // textBox_QLNV_TimKiem
             // 
             textBox_QLNV_TimKiem.Anchor = AnchorStyles.None;
-            textBox_QLNV_TimKiem.Location = new Point(928, 24);
+            textBox_QLNV_TimKiem.Location = new Point(777, 24);
             textBox_QLNV_TimKiem.Name = "textBox_QLNV_TimKiem";
-            textBox_QLNV_TimKiem.Size = new Size(232, 28);
+            textBox_QLNV_TimKiem.Size = new Size(263, 28);
             textBox_QLNV_TimKiem.TabIndex = 66;
             // 
             // button_QLNV_Sua
             // 
             button_QLNV_Sua.Anchor = AnchorStyles.None;
-            button_QLNV_Sua.BackColor = Color.DeepSkyBlue;
+            button_QLNV_Sua.BackColor = Color.White;
+            button_QLNV_Sua.FlatAppearance.BorderSize = 2;
+            button_QLNV_Sua.FlatAppearance.MouseDownBackColor = Color.PaleTurquoise;
+            button_QLNV_Sua.FlatAppearance.MouseOverBackColor = Color.PaleTurquoise;
+            button_QLNV_Sua.FlatStyle = FlatStyle.Flat;
+            button_QLNV_Sua.ForeColor = Color.SteelBlue;
             button_QLNV_Sua.Image = (Image)resources.GetObject("button_QLNV_Sua.Image");
-            button_QLNV_Sua.Location = new Point(236, 27);
+            button_QLNV_Sua.Location = new Point(210, 27);
             button_QLNV_Sua.Name = "button_QLNV_Sua";
             button_QLNV_Sua.Size = new Size(95, 76);
             button_QLNV_Sua.TabIndex = 62;
@@ -487,27 +491,39 @@
             button_QLNV_Sua.TextAlign = ContentAlignment.MiddleRight;
             button_QLNV_Sua.TextImageRelation = TextImageRelation.ImageBeforeText;
             button_QLNV_Sua.UseVisualStyleBackColor = false;
+            button_QLNV_Sua.Click += button_QLNV_Sua_Click;
             // 
             // button_QLNV_TimKiem
             // 
             button_QLNV_TimKiem.Anchor = AnchorStyles.None;
-            button_QLNV_TimKiem.BackColor = Color.DeepSkyBlue;
+            button_QLNV_TimKiem.BackColor = Color.White;
+            button_QLNV_TimKiem.FlatAppearance.BorderSize = 2;
+            button_QLNV_TimKiem.FlatAppearance.MouseDownBackColor = Color.PaleTurquoise;
+            button_QLNV_TimKiem.FlatAppearance.MouseOverBackColor = Color.PaleTurquoise;
+            button_QLNV_TimKiem.FlatStyle = FlatStyle.Flat;
+            button_QLNV_TimKiem.ForeColor = Color.SteelBlue;
             button_QLNV_TimKiem.Image = (Image)resources.GetObject("button_QLNV_TimKiem.Image");
-            button_QLNV_TimKiem.Location = new Point(928, 57);
+            button_QLNV_TimKiem.Location = new Point(777, 57);
             button_QLNV_TimKiem.Name = "button_QLNV_TimKiem";
-            button_QLNV_TimKiem.Size = new Size(232, 43);
+            button_QLNV_TimKiem.Size = new Size(263, 43);
             button_QLNV_TimKiem.TabIndex = 65;
             button_QLNV_TimKiem.Text = "Tìm kiếm";
             button_QLNV_TimKiem.TextAlign = ContentAlignment.MiddleRight;
             button_QLNV_TimKiem.TextImageRelation = TextImageRelation.ImageBeforeText;
             button_QLNV_TimKiem.UseVisualStyleBackColor = false;
+            button_QLNV_TimKiem.Click += button_QLNV_TimKiem_Click;
             // 
             // button_QLNV_XuatFlie
             // 
             button_QLNV_XuatFlie.Anchor = AnchorStyles.None;
-            button_QLNV_XuatFlie.BackColor = Color.DeepSkyBlue;
+            button_QLNV_XuatFlie.BackColor = Color.White;
+            button_QLNV_XuatFlie.FlatAppearance.BorderSize = 2;
+            button_QLNV_XuatFlie.FlatAppearance.MouseDownBackColor = Color.PaleTurquoise;
+            button_QLNV_XuatFlie.FlatAppearance.MouseOverBackColor = Color.PaleTurquoise;
+            button_QLNV_XuatFlie.FlatStyle = FlatStyle.Flat;
+            button_QLNV_XuatFlie.ForeColor = Color.SteelBlue;
             button_QLNV_XuatFlie.Image = (Image)resources.GetObject("button_QLNV_XuatFlie.Image");
-            button_QLNV_XuatFlie.Location = new Point(691, 24);
+            button_QLNV_XuatFlie.Location = new Point(589, 24);
             button_QLNV_XuatFlie.Name = "button_QLNV_XuatFlie";
             button_QLNV_XuatFlie.Size = new Size(98, 76);
             button_QLNV_XuatFlie.TabIndex = 63;
@@ -515,27 +531,39 @@
             button_QLNV_XuatFlie.TextAlign = ContentAlignment.MiddleRight;
             button_QLNV_XuatFlie.TextImageRelation = TextImageRelation.ImageBeforeText;
             button_QLNV_XuatFlie.UseVisualStyleBackColor = false;
+            button_QLNV_XuatFlie.Click += button_QLNV_XuatFlie_Click;
             // 
             // button_QLNV_Them
             // 
             button_QLNV_Them.Anchor = AnchorStyles.None;
-            button_QLNV_Them.BackColor = Color.DeepSkyBlue;
+            button_QLNV_Them.BackColor = Color.White;
+            button_QLNV_Them.FlatAppearance.BorderSize = 2;
+            button_QLNV_Them.FlatAppearance.MouseDownBackColor = Color.PaleTurquoise;
+            button_QLNV_Them.FlatAppearance.MouseOverBackColor = Color.PaleTurquoise;
+            button_QLNV_Them.FlatStyle = FlatStyle.Flat;
+            button_QLNV_Them.ForeColor = Color.SteelBlue;
             button_QLNV_Them.Image = (Image)resources.GetObject("button_QLNV_Them.Image");
-            button_QLNV_Them.Location = new Point(6, 27);
+            button_QLNV_Them.Location = new Point(54, 24);
             button_QLNV_Them.Name = "button_QLNV_Them";
-            button_QLNV_Them.Size = new Size(94, 76);
+            button_QLNV_Them.Size = new Size(100, 76);
             button_QLNV_Them.TabIndex = 61;
             button_QLNV_Them.Text = "Thêm";
             button_QLNV_Them.TextAlign = ContentAlignment.MiddleRight;
             button_QLNV_Them.TextImageRelation = TextImageRelation.ImageBeforeText;
             button_QLNV_Them.UseVisualStyleBackColor = false;
+            button_QLNV_Them.Click += button_QLNV_Them_Click;
             // 
             // button_QLNV_LamMoi
             // 
             button_QLNV_LamMoi.Anchor = AnchorStyles.None;
-            button_QLNV_LamMoi.BackColor = Color.DeepSkyBlue;
+            button_QLNV_LamMoi.BackColor = Color.White;
+            button_QLNV_LamMoi.FlatAppearance.BorderSize = 2;
+            button_QLNV_LamMoi.FlatAppearance.MouseDownBackColor = Color.PaleTurquoise;
+            button_QLNV_LamMoi.FlatAppearance.MouseOverBackColor = Color.PaleTurquoise;
+            button_QLNV_LamMoi.FlatStyle = FlatStyle.Flat;
+            button_QLNV_LamMoi.ForeColor = Color.SteelBlue;
             button_QLNV_LamMoi.Image = (Image)resources.GetObject("button_QLNV_LamMoi.Image");
-            button_QLNV_LamMoi.Location = new Point(454, 24);
+            button_QLNV_LamMoi.Location = new Point(402, 24);
             button_QLNV_LamMoi.Name = "button_QLNV_LamMoi";
             button_QLNV_LamMoi.Size = new Size(99, 76);
             button_QLNV_LamMoi.TabIndex = 64;
@@ -543,56 +571,72 @@
             button_QLNV_LamMoi.TextAlign = ContentAlignment.MiddleRight;
             button_QLNV_LamMoi.TextImageRelation = TextImageRelation.ImageBeforeText;
             button_QLNV_LamMoi.UseVisualStyleBackColor = false;
+            button_QLNV_LamMoi.Click += button_QLNV_LamMoi_Click;
+            // 
+            // panel2
+            // 
+            panel2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            panel2.Controls.Add(dataGridView_QLHD);
+            panel2.Location = new Point(10, 297);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1043, 178);
+            panel2.TabIndex = 4;
+            // 
+            // dataGridView_QLHD
+            // 
+            dataGridView_QLHD.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dataGridView_QLHD.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            dataGridView_QLHD.BackgroundColor = Color.White;
+            dataGridView_QLHD.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView_QLHD.Location = new Point(0, 0);
+            dataGridView_QLHD.Name = "dataGridView_QLHD";
+            dataGridView_QLHD.RowHeadersWidth = 51;
+            dataGridView_QLHD.Size = new Size(1043, 175);
+            dataGridView_QLHD.TabIndex = 2;
             // 
             // UC_QLHopDong
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panel3);
             Controls.Add(panel2);
+            Controls.Add(panel3);
             Controls.Add(panel1);
-            Controls.Add(label10);
             Name = "UC_QLHopDong";
-            Size = new Size(1173, 570);
+            Size = new Size(1056, 593);
+            Load += UC_QLHopDong_Load;
             panel1.ResumeLayout(false);
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel3.ResumeLayout(false);
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView_QLHD).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
         private Panel panel3;
-        private DataGridView dataGridView1;
-        private Label label10;
         private GroupBox groupBox1;
-        private TextBox textBox3;
+        private TextBox textBox_QLHD_HeSoLuong;
         private Label label5;
-        private TextBox textBox11;
-        private Label label16;
-        private TextBox textBox10;
+        private TextBox textBox_NoiDung;
         private Label label15;
-        private DateTimePicker dateTimePicker3;
+        private DateTimePicker dateTimePicker_NgayKiHD;
         private Label label8;
-        private TextBox textBox5;
-        private TextBox textBox9;
-        private ComboBox comboBox1;
-        private TextBox textBox8;
-        private DateTimePicker dateTimePicker2;
-        private DateTimePicker dateTimePicker1;
-        private TextBox textBox7;
-        private TextBox textBox6;
-        private TextBox textBox4;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox textBox_QLHD_SDT;
+        private TextBox textBox_QLHD_LanKi;
+        private ComboBox comboBox_QLHD_TrangThai;
+        private TextBox textBox_QLHD_CCCD;
+        private DateTimePicker dateTimePicker_QLHD_NgayKT;
+        private DateTimePicker dateTimePicker_QLHD_NgayBD;
+        private TextBox textBox_QLHD_ThoiHan;
+        private TextBox textBox_QLHD_LuongCB;
+        private TextBox textBox_QLHD_DC;
+        private TextBox textBox_QLHD_HoTen;
+        private TextBox textBox_QLHD_SoHD;
         private Label label14;
         private Label label13;
         private Label label12;
@@ -611,5 +655,11 @@
         private Button button_QLNV_XuatFlie;
         private Button button_QLNV_Them;
         private Button button_QLNV_LamMoi;
+        private ComboBox comboBox_QLHD_LoaiHopDong;
+        private Label label16;
+        private Panel panel2;
+        private DataGridView dataGridView_QLHD;
+        private ComboBox comboBox_QLHD_IDNV;
+        private Label label10;
     }
 }

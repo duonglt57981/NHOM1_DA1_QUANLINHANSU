@@ -40,6 +40,11 @@ namespace NHOM1_DA1_QUANLINHANSU.DAL
                 }).ToList();
         }
 
+        public bool KiemTraTaiKhoan( int IDTK)
+        {
+            return _db.Nhanviens.Any(nv => nv.IdtaiKhoan == IDTK);
+        }
+
         public List<Phongban> GetPhongBAN()
         {
             return _db.Phongbans.ToList();
