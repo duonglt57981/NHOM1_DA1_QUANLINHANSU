@@ -50,9 +50,10 @@
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.BackColor = Color.SteelBlue;
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(287, 1);
+            panel1.Location = new Point(359, 1);
+            panel1.Margin = new Padding(4, 4, 4, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1056, 37);
+            panel1.Size = new Size(1320, 46);
             panel1.TabIndex = 0;
             // 
             // label1
@@ -61,9 +62,10 @@
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(401, 8);
+            label1.Location = new Point(501, 10);
+            label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
-            label1.Size = new Size(245, 23);
+            label1.Size = new Size(299, 26);
             label1.TabIndex = 0;
             label1.Text = "Hệ Thống Quản Lí Nhân Sự";
             // 
@@ -79,9 +81,10 @@
             panel2.Controls.Add(button_ChamCong);
             panel2.Controls.Add(button_QLHopDong);
             panel2.Controls.Add(button_QLNhanVien);
-            panel2.Location = new Point(1, 36);
+            panel2.Location = new Point(1, 45);
+            panel2.Margin = new Padding(4, 4, 4, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(287, 596);
+            panel2.Size = new Size(359, 745);
             panel2.TabIndex = 1;
             // 
             // button6
@@ -93,9 +96,10 @@
             button6.FlatAppearance.MouseOverBackColor = Color.Aqua;
             button6.FlatStyle = FlatStyle.Flat;
             button6.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button6.Location = new Point(4, 500);
+            button6.Location = new Point(5, 625);
+            button6.Margin = new Padding(4, 4, 4, 4);
             button6.Name = "button6";
-            button6.Size = new Size(280, 60);
+            button6.Size = new Size(350, 75);
             button6.TabIndex = 8;
             button6.Text = "button6";
             button6.UseVisualStyleBackColor = false;
@@ -109,9 +113,10 @@
             button5.FlatAppearance.MouseOverBackColor = Color.Aqua;
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button5.Location = new Point(3, 434);
+            button5.Location = new Point(4, 542);
+            button5.Margin = new Padding(4, 4, 4, 4);
             button5.Name = "button5";
-            button5.Size = new Size(280, 60);
+            button5.Size = new Size(350, 75);
             button5.TabIndex = 7;
             button5.Text = "ĐĂNG XUẤT";
             button5.UseVisualStyleBackColor = false;
@@ -125,9 +130,10 @@
             button_KTKL.FlatAppearance.MouseOverBackColor = Color.Aqua;
             button_KTKL.FlatStyle = FlatStyle.Flat;
             button_KTKL.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button_KTKL.Location = new Point(4, 236);
+            button_KTKL.Location = new Point(5, 295);
+            button_KTKL.Margin = new Padding(4, 4, 4, 4);
             button_KTKL.Name = "button_KTKL";
-            button_KTKL.Size = new Size(280, 60);
+            button_KTKL.Size = new Size(350, 75);
             button_KTKL.TabIndex = 6;
             button_KTKL.Text = "KHEN THƯỞNG KỈ LUẬT";
             button_KTKL.UseVisualStyleBackColor = false;
@@ -141,12 +147,14 @@
             button_BaoHiem.FlatAppearance.MouseOverBackColor = Color.Aqua;
             button_BaoHiem.FlatStyle = FlatStyle.Flat;
             button_BaoHiem.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button_BaoHiem.Location = new Point(5, 302);
+            button_BaoHiem.Location = new Point(6, 378);
+            button_BaoHiem.Margin = new Padding(4, 4, 4, 4);
             button_BaoHiem.Name = "button_BaoHiem";
-            button_BaoHiem.Size = new Size(280, 60);
+            button_BaoHiem.Size = new Size(350, 75);
             button_BaoHiem.TabIndex = 5;
             button_BaoHiem.Text = "BẢO HIỂM";
             button_BaoHiem.UseVisualStyleBackColor = false;
+            button_BaoHiem.Click += button_BaoHiem_Click;
             // 
             // button1
             // 
@@ -157,9 +165,10 @@
             button1.FlatAppearance.MouseOverBackColor = Color.Aqua;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button1.Location = new Point(5, 368);
+            button1.Location = new Point(6, 460);
+            button1.Margin = new Padding(4, 4, 4, 4);
             button1.Name = "button1";
-            button1.Size = new Size(280, 60);
+            button1.Size = new Size(350, 75);
             button1.TabIndex = 4;
             button1.Text = "TÀI KHOẢN";
             button1.UseVisualStyleBackColor = false;
@@ -173,9 +182,10 @@
             button_ChamCong.FlatAppearance.MouseOverBackColor = Color.Aqua;
             button_ChamCong.FlatStyle = FlatStyle.Flat;
             button_ChamCong.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
-            button_ChamCong.Location = new Point(3, 170);
+            button_ChamCong.Location = new Point(4, 212);
+            button_ChamCong.Margin = new Padding(4, 4, 4, 4);
             button_ChamCong.Name = "button_ChamCong";
-            button_ChamCong.Size = new Size(280, 60);
+            button_ChamCong.Size = new Size(350, 75);
             button_ChamCong.TabIndex = 3;
             button_ChamCong.Text = "QUẢN LÍ CHẤM CÔNG";
             button_ChamCong.UseVisualStyleBackColor = false;
@@ -190,9 +200,10 @@
             button_QLHopDong.FlatStyle = FlatStyle.Flat;
             button_QLHopDong.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             button_QLHopDong.Image = (Image)resources.GetObject("button_QLHopDong.Image");
-            button_QLHopDong.Location = new Point(4, 104);
+            button_QLHopDong.Location = new Point(5, 130);
+            button_QLHopDong.Margin = new Padding(4, 4, 4, 4);
             button_QLHopDong.Name = "button_QLHopDong";
-            button_QLHopDong.Size = new Size(280, 60);
+            button_QLHopDong.Size = new Size(350, 75);
             button_QLHopDong.TabIndex = 2;
             button_QLHopDong.Text = "QUẢN LÍ HỢP ĐỒNG";
             button_QLHopDong.TextAlign = ContentAlignment.MiddleRight;
@@ -210,11 +221,11 @@
             button_QLNhanVien.FlatStyle = FlatStyle.Flat;
             button_QLNhanVien.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
             button_QLNhanVien.Image = (Image)resources.GetObject("button_QLNhanVien.Image");
-            button_QLNhanVien.Location = new Point(4, 38);
-            button_QLNhanVien.Margin = new Padding(6);
+            button_QLNhanVien.Location = new Point(5, 48);
+            button_QLNhanVien.Margin = new Padding(8, 8, 8, 8);
             button_QLNhanVien.Name = "button_QLNhanVien";
-            button_QLNhanVien.Padding = new Padding(6);
-            button_QLNhanVien.Size = new Size(280, 60);
+            button_QLNhanVien.Padding = new Padding(8, 8, 8, 8);
+            button_QLNhanVien.Size = new Size(350, 75);
             button_QLNhanVien.TabIndex = 1;
             button_QLNhanVien.Text = "QUẢN LÍ NHÂN SỰ";
             button_QLNhanVien.TextAlign = ContentAlignment.MiddleRight;
@@ -225,21 +236,23 @@
             // panelMain
             // 
             panelMain.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panelMain.Location = new Point(287, 36);
+            panelMain.Location = new Point(359, 45);
+            panelMain.Margin = new Padding(4, 4, 4, 4);
             panelMain.Name = "panelMain";
             panelMain.RightToLeft = RightToLeft.No;
-            panelMain.Size = new Size(1056, 593);
+            panelMain.Size = new Size(1320, 741);
             panelMain.TabIndex = 2;
             // 
             // TrangChu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SkyBlue;
-            ClientSize = new Size(1344, 628);
+            ClientSize = new Size(1680, 785);
             Controls.Add(panelMain);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(4, 4, 4, 4);
             Name = "TrangChu";
             Text = "Hệ Thống Quản Lí Nhân Sự";
             Load += TrangChu_Load;

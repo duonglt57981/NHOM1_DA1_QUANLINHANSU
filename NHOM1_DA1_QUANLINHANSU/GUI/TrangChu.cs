@@ -39,7 +39,7 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI
 
         private void TrangChu_Load(object sender, EventArgs e)
         {
-            UC_Default defaultUC = new UC_Default(); 
+            UC_Default defaultUC = new UC_Default();
             if (!panelMain.Controls.Contains(defaultUC))
             {
                 panelMain.Controls.Add(defaultUC);
@@ -48,9 +48,13 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI
             }
             else
             {
-                panelMain.Controls[0].BringToFront(); 
+                panelMain.Controls[0].BringToFront();
             }
         }
-        
+
+        private void button_BaoHiem_Click(object sender, EventArgs e)
+        {
+            LoadUC(new UC.UC_QLBaoHiem());
+        }
     }
 }
