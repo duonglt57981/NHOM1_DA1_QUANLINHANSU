@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NHOM1_DA1_QUANLINHANSU.BLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace NHOM1_DA1_QUANLINHANSU.GUI.UC
 {
     public partial class UC_QLBaoHiem : UserControl
     {
+        private BLL_QLBaoHiem _bll = new BLL_QLBaoHiem();
         public UC_QLBaoHiem()
         {
             InitializeComponent();
+            LoadData();
+        }
+        private void LoadData()
+        {
+            dataGridView1.DataSource = _bll.LayDanhSach();
         }
     }
 }
